@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+h2{
+    text-align: center;
+}
+h2 a{
+     color: black;
+     text-decoration: none;
+     font-size: 30px;
+     padding-bottom: 10px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #eff1f4;
+}
+.login{
+    position: relative;
+    width: 380px;
+    padding: 80px 50px 50px;
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.1),-15px -15px 20px #fffb;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.input-box input{
+    border: none;
+    outline: none;
+    background: transparent;
+    border-radius: 10px;
+}
+.input-box input{
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    font-size: 15px;
+    width: 100%;
+    padding: 15px 20px ;
+    padding-left: 40px;
+    margin-bottom: 20px;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1),
+    inset -5px -5px 10px #fff;
+}
+.input-submit input{
+    border: none;
+    outline: none;
+    background: transparent;
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+    padding: 10px 20px 10px 20px ;
+     margin-bottom: 20px;
+    box-shadow:  5px 5px 10px rgba(0, 0, 0, 0.1),
+     -5px -5px 10px #fff;
+}
+.input-submit input:focus{
+    box-shadow: inset  5px 5px 10px rgba(0, 0, 0, 0.1),
+     inset -5px -5px 10px #fff;
+}
+h4{
+    font-size: 15px;
+}
+.fingerprint{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    cursor: pointer;
+}
+.fingerprint .fingerprint-box{
+    box-shadow:  5px 5px 10px rgba(0, 0, 0, 0.1),
+     -5px -5px 10px #fff;
+     border: 3px solid #eff1f4;
+     padding: 15px 20px 10px ;
+     border-radius: 10px;
+     background: linear-gradient(315deg, #03a9f4, #0082bc);
+}
+.fingerprint .fingerprint-box img{
+    max-width: 45px;
+    filter: invert(1);
+    animation: animate 1s linear infinite;
+}
+@keyframes animate{
+    0%,100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.5;
+    }
+}
+
+p{
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
